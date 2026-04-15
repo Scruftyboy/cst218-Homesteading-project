@@ -1,10 +1,24 @@
-# CST218 Assignment 16 Starter Pack — User-Owned Routes
+# CST - 218 Homesteading Project
 
-This starter pack demonstrates:
-- Register + login that returns a token (JWT)
-- Auth middleware (Bearer token)
-- A protected /profile route
-- A user-owned CRUD router for /entries
+Summary:
+ This project was meant to be an API for data regarding homesteading. To be more specific, knowledge to maintain, cultivate and thrive with your home.
+
+## Features
+ - The ability to post data
+ - The ability to delete data
+
+## Tech stack
+
+ - Node
+ - Express
+ - MongoDB
+
+## Routes
+- POST /register
+- POST /login   -> returns token
+- GET  /profile (protected)
+- CRUD: /entries (all protected, ownership enforced)
+- /auth
 
 ## Setup
 1. Install dependencies:
@@ -13,8 +27,10 @@ This starter pack demonstrates:
 3. Start:
    node server.js
 
-## Routes
-- POST /register
-- POST /login   -> returns token
-- GET  /profile (protected)
-- CRUD: /entries (all protected, ownership enforced)
+## Endpoints to test
+
+- POST /auth/register
+- POST /auth/login
+- GET /profile (protected)
+- GET /entries (protected)
+- POST /entries (protected)
